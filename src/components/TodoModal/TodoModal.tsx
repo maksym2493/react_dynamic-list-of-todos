@@ -21,6 +21,7 @@ export const TodoModal: React.FC<Props> = ({ todo, onClosed }) => {
     getUser(todo.userId)
       .then(setUser)
       .finally(() => setIsLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
