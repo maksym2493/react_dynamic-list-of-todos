@@ -19,12 +19,12 @@ function filterTodos(
   filter: string,
 ): Todo[] {
   const filtered = filter === 'all';
-  const convertedFiler = filter === 'completed' ? true : false;
+  const convertedFilter = filter === 'completed' ? true : false;
 
   return todos.filter(
     todo =>
       todo.title.toLowerCase().includes(cleanQuery) &&
-      (filtered || convertedFiler === todo.completed),
+      (filtered || convertedFilter === todo.completed),
   );
 }
 

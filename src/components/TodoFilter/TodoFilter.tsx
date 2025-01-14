@@ -5,7 +5,7 @@ type Props = {
   onStatusSelect: (value: string) => void;
 
   query: string;
-  onQueryChange: (Value: string) => void;
+  onQueryChange: (value: string) => void;
 };
 
 export const TodoFilter: React.FC<Props> = ({

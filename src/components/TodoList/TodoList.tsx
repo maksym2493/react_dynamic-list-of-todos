@@ -6,7 +6,7 @@ import { Todo } from '../../types/Todo';
 type Props = {
   todos: Todo[];
   selectedTodoId?: number | null;
-  onSelect?: (userId: Todo) => void;
+  onSelect?: (todo: Todo) => void;
 };
 
 export const TodoList: React.FC<Props> = React.memo(function TodoList({
